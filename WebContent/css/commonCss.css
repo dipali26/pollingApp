@@ -34,9 +34,6 @@ body {
   font-size: 17px;
 }
 
-
-
-
 .pollDataDiv {
 	height: 250px;
     background-color: #e6cef4;  /* #2e37a1; */
@@ -44,7 +41,7 @@ body {
     margin: 30px;
     padding-top: 40px;
     padding-left: 40px;
-
+border-radius: 20px;
 	
 }
 .chartDiv{
@@ -63,24 +60,8 @@ button {
     cursor: pointer;
 }
 .pollingDetailsDiv{
-	
-	
     margin-top: 35px;
 }
-    
-
-/* 
-.errMsgdiv {
-	background-image: url("../image/errorIcon.png");
-	background-repeat: no-repeat;
-	background-size: 14px;
-	background-position: left
-}
-
-.errMsg {
-	color: #000000;
-	margin-left: 20px;
-} */
 
 input[type=button] {
 	 background-color: #980ae1;

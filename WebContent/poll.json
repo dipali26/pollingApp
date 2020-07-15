@@ -10,13 +10,13 @@
           {
             "id": 1,
             "label": "Yes",
-            "votes": 14,
+            "votes": 13,
             "$$hashKey": "object:8"
           },
           {
             "id": 2,
             "label": "No",
-            "votes": 5,
+            "votes": 3,
             "$$hashKey": "object:9"
           }
         ]
@@ -31,15 +31,11 @@
         "options": [
           {
             "id": 3,
-            "label": "Yes",
-            "votes": 40,
-            "$$hashKey": "object:12"
+            "label": "Yes"
           },
           {
             "id": 4,
-            "label": "No",
-            "votes": 22,
-            "$$hashKey": "object:13"
+            "label": "No"
           }
         ]
       }
@@ -71,27 +67,39 @@
         "options": [
           {
             "id": 7,
-            "label": "Hong Kong"
+            "label": "Hong Kong",
+            "votes": 1,
+            "$$hashKey": "object:24"
           },
           {
             "id": 8,
-            "label": "China"
+            "label": "China",
+            "votes": 0,
+            "$$hashKey": "object:25"
           },
           {
             "id": 9,
-            "label": "Australia"
+            "label": "Australia",
+            "votes": 1,
+            "$$hashKey": "object:26"
           },
           {
             "id": 10,
-            "label": "Thailand"
+            "label": "Thailand",
+            "votes": 1,
+            "$$hashKey": "object:27"
           },
           {
             "id": 11,
-            "label": "Korea"
+            "label": "Korea",
+            "votes": 0,
+            "$$hashKey": "object:28"
           },
           {
             "id": 12,
-            "label": "Japan"
+            "label": "Japan",
+            "votes": 0,
+            "$$hashKey": "object:29"
           }
         ]
       }
