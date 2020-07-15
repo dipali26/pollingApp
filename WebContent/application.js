@@ -5,7 +5,7 @@ app
 				"pollingController",
 				function($scope, $http) {
 
-					
+					//to read poll.json file
 					var request = {
 						method : 'get',
 						url : '/poll.json',
@@ -31,6 +31,8 @@ app
 									}).error(function() {
 
 							});
+					
+					//to save vote with respect to poll question
 
 					$scope.save = function(choices, pollData) {
 						$scope.pollQuest = pollData;
@@ -42,8 +44,9 @@ app
 
 							}
 						}
-
+						// calling Save Result method
 						$scope.saveResult($scope.pollQuest);
+						//calling chart function to render chart
 						$scope.chartForPoll(pollData);
 
 					}
@@ -70,6 +73,8 @@ app
 						}
 
 					}
+					
+					//Method to save/update vote count in poll.json
 
 					$scope.saveResult = function(updatedPollDetails) {
 						$scope.resultData = {};
