@@ -14,7 +14,7 @@ How to run the application:-
    * json-server --watch poll.json
 4. Open browser and browse http://127.0.0.1:8080 (localhost:8080)
 
-Due to time constraint:
+Due to time constraint: 
 1. I have used fake api to fetch/store data instead of java and db code implementation.
 2. I have used Json-server to fetch poll.json data and store results in the same json.
 
