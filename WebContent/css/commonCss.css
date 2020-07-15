@@ -1,0 +1,142 @@
+body {
+	margin-top: 30px;
+	padding-left: 20px;
+}
+.header {
+  overflow: hidden;
+  background-color: #f1f1f1;
+ 
+}
+
+/* Style the header links */
+.header a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 25px;
+  border-radius: 4px;
+}
+/* Change the background color on mouse-over */
+ .header a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.header input[type=text] {
+  float: right;
+  padding: 6px;
+  border: none;
+  margin-top: 8px;
+  margin-right: 16px;
+  font-size: 17px;
+}
+
+
+
+
+.pollDataDiv {
+	height: 250px;
+    background-color: #e6cef4;  /* #2e37a1; */
+    border: 2px solid azure;
+    margin: 30px;
+    padding-top: 40px;
+    padding-left: 40px;
+
+	
+}
+.chartDiv{
+	float:right;
+	margin-top: -180px;
+}
+
+button {
+    background-color: #980ae1;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    padding: 14px 32px;
+    text-decoration: none;
+    margin: 15px 10px;
+    cursor: pointer;
+}
+.pollingDetailsDiv{
+	
+	
+    margin-top: 35px;
+}
+    
+
+/* 
+.errMsgdiv {
+	background-image: url("../image/errorIcon.png");
+	background-repeat: no-repeat;
+	background-size: 14px;
+	background-position: left
+}
+
+.errMsg {
+	color: #000000;
+	margin-left: 20px;
+} */
+
+input[type=button] {
+	 background-color: #980ae1;
+    border: none;
+    border-radius: 8px;
+    color: white;
+       color: white;
+    padding: 6px 20px;
+    text-decoration: none;
+    margin: -3px 10px;
+    cursor: pointer;
+
+	}
+
+button:hover {
+	border-color: #06330540;
+	border-style: solid;
+	color: white;
+}
+
+label {
+	font-style: normal;
+	font-family: arial;
+	font-size: 16px;
+}
+
+
+/* For mobile phones: */
+@media only screen and (max-width: 767px) {
+	.pollDataDiv{
+	width:100%;
+	height: auto;
+    margin: auto;
+   
+    padding-left: inherit;
+	}
+	body {
+	margin-top: auto;
+	padding-left: 0px;
+}
+.header {
+
+width:100%;
+}
+.header a{
+	font-size: 12px;
+}
+.header input[type=text] {
+	font-size: 12px;
+}
+label {
+	padding-left: 10px;
+    font-size: 12px;
+
+}
+
+.chartDiv {
+     float: none; 
+     margin-top: auto;

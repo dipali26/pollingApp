@@ -1,0 +1,51 @@
+
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script
+	src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.2/angular.min.js"></script>
+	
+<script type="text/javascript" src="https://rawgit.com/nnnick/Chart.js/v1.0.2/Chart.min.js"></script>
+    <script type="text/javascript" src="https://rawgit.com/jtblin/angular-chart.js/0.8.0/dist/angular-chart.min.js"></script>
+
+<link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/jtblin/angular-chart.js/0.8.0/dist/angular-chart.css" />
+<link rel="stylesheet" type="text/css" href="css/commonCss.css">
+</head>
+
+<body ng-app="myapp" ng-controller="pollingController">
+<div>	<header ng-include="'./pages/header.html'"></header></div>
+
+<div class="pollingDetailsDiv">
+
+<div  ng-repeat="pollData in pollList track by $index">
+<div class="pollDataDiv">
+<label>{{pollData.title}}</label> <label style="color:#1717db;font-weight:600;">{{pollData.publishedDate * 1000| date: "MMMM d, y"}}</label>
+<div ng-repeat="choice in pollData.answer.options" style="width:50%;padding-top: 15px;">
+
+<button  ng-if="pollData.answer.type=='Single'" name=myButton ng-click="save(choice.label,pollData,$parent.$index)">{{choice.label}}</button>
+
+
+<span   ng-if="pollData.answer.type=='Multi'" ><input type="button" ng-click="save(choice.label,pollData)" value={{choice.label}} ng-model="selectedMultiOption">
+
+</span>
+</div>
+
+<div class="chartDiv"> 
+<canvas id="piechart"options="diskDataJson.options" class="chart chart-pie" data="diskDataJson.data"
+            labels="diskDataJson.labels" colours="diskDataJson.colours" legend="true" ng-if=pollData.id==pollDetails.id></canvas>
+    </div>
+</div>
+
+
+</div>
+
+</div>
+	
+	<script src="application.js">
+		
+	</script>
+
+
+</body>
+</html>
